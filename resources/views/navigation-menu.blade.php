@@ -38,12 +38,6 @@
           {{-- menulg --}}
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              {{-- <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a> --}}
-{{--
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
-
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a> --}}
 
               <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                 <x-jet-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('welcome')">
@@ -58,6 +52,11 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('creador') }}" :active="request()->routeIs('creador')">
                         {{ __('Creadores') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('contacto') }}" :active="request()->routeIs('contacto')">
+                        {{ __('Contactanos') }}
                     </x-jet-nav-link>
                 </div>
             </div>
@@ -143,6 +142,11 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-jet-responsive-nav-link href="{{ route('creador') }}" :active="request()->routeIs('creador')">
                 {{ __('Creadores') }}
+            </x-jet-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-jet-responsive-nav-link href="{{ route('contacto') }}" :active="request()->routeIs('contacto')">
+                {{ __('Contactanos') }}
             </x-jet-responsive-nav-link>
         </div>
       </div>

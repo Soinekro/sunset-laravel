@@ -1,5 +1,5 @@
-<div class=" grid grid-cols-1 md:grid-cols-2">
-<figure class="">
+<div class="grid grid-cols-1 md:grid-cols-2 ">
+<figure class=" bg-gray-200 border border-gray-900 m-2">
     <img class=" m-4 w-32 lg:rounded-sm h-32 md:w-48 md:h-48 md:rounded-md rounded-full mx-auto" src="{{asset('img/creador/joler.jpg')}}" alt="" width="384" height="512">
     <div class="pt-6 md:p-8 md:h-48 text-center md:text-left space-y-4">
       <blockquote>
@@ -13,14 +13,13 @@
             Jimenez Ruiz, Joler
         </div>
         <div class="text-gray-500">
-
-Estudió Ciencias de la comunicación en UTP - Universidad Tecnológica del Perú
+            Estudió Ciencias de la comunicación en UTP - Universidad Tecnológica del Perú
         </div>
       </figcaption>
     </div>
   </figure>
 
-    <figure class="">
+    <figure class=" bg-gray-200 border border-gray-900 m-2">
     <img class=" m-4 w-32 lg:rounded-sm h-32 md:w-48 md:h-48 md:rounded-md rounded-full mx-auto" src="{{asset('img/creador/ruty.jpg')}}" alt="" width="384" height="512">
     <div class="pt-6 md:p-8 md:h-48 text-center md:text-left space-y-4">
       <blockquote>
@@ -38,6 +37,5 @@ Estudió Ciencias de la comunicación en UTP - Universidad Tecnológica del Per�
         </div>
       </figcaption>
     </div>
-
   </figure>
 </div>

@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
+        <link rel="shortcut icon" href="{{asset('img/logo.png')}}" type="image/x-icon">
+        <title>Sunset Biografia</title>
 
 
         <!-- Styles -->
@@ -12,24 +12,16 @@
 
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="antialiased">
+    <body class="antialiased bg-gray-700">
         <x-jet-banner />
             @livewire('navigation-menu')
 
             <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
-
             <!-- Page Content -->
             <div>
-                <div class=" container mt-4 m-auto">
+                <div class=" container bg-gray-600 mt-4 m-auto p-10 ">
                     <img src="{{asset('img/logo.png')}}" class=" border rounded-full w-1/4 float-left " alt="logo Sunset Art"><h1 class=" mr-8 text-2xl font-bold"> Biografia de Sunset </h1>
-                    <div class="container ml-42 font-serif text-justify">
+                    <div class="container ml-42 font-serif text-justify p-4">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quasi ad, facere molestiae aliquam cum! Optio quae, corrupti voluptatibus doloremque quisquam voluptatum quod incidunt sit autem excepturi dignissimos officia quaerat.</p>
                     <p>Accusantium sint, ad minus error temporibus nam hic in voluptatem qui ipsum maiores repellendus, quod at, corrupti ab natus dignissimos beatae tempora alias quas. Voluptatem temporibus quaerat necessitatibus ducimus explicabo.</p>
                     <p>Sequi vel assumenda ea quos hic corporis reiciendis itaque ducimus, illo qui earum quasi suscipit numquam eaque voluptatibus explicabo laborum cupiditate odit cum quia dolorem, doloremque aperiam? Doloremque, illo expedita.</p>
@@ -51,7 +43,7 @@
             </div>
             </div>
 
-        @stack('modals')
+        @include('layouts.footer')
 
         @livewireScripts
     </body>

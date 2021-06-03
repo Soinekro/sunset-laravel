@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('contact', function () {
+Route::get('contac', function () {
     return view('contact');
 })->name('contact');
 
@@ -25,9 +26,12 @@ Route::get('creador', function () {
     return view('creador');
 })->name('creador');
 
-Route::get('Conocenos', function () {
+Route::get('conocenos', function () {
     return view('conocenos');
 })->name('conocenos');
+Route::get('contacto', [ContactoController::class, 'index'])->name('contacto');
+
+Route::post('contactanos', [ContactoController::class , 'store'])->name('contacto.store');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('welcome');
